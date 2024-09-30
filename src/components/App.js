@@ -4,8 +4,8 @@ import MarkdownPreview from './MarkdownPreview';
 import "../styles/App.css"
 
 const App = () => {
-  const [markdown, setMarkdown] = useState('');
-  const [html, setHtml] = useState('');
+  const [markdown, setMarkdown] = useState("");
+  const [html, setHtml] = useState("");
 
   useEffect(() => {
     // Simple markdown to HTML conversion
@@ -24,6 +24,7 @@ const App = () => {
   return (
     <div className="app">
       <MarkdownEditor markdown={markdown} setMarkdown={setMarkdown} />
+
       <MarkdownPreview html={html} />
     </div>
   );
