@@ -1,12 +1,12 @@
-// import React from 'react';
+import React from 'react';
 
-// const MarkdownPreview = ({ html }) => {
-//   return (
-//     <div
-//       className="preview"
-//       dangerouslySetInnerHTML={{ __html: html }}
-//     />
-//   );
-// };
+const MarkDownPreview = ({ html }) => {
+  return (
+    <div
+      className="preview"
+      dangerouslySetInnerHTML={{ __html: html }}
+    />
+  );
+};
 
-// export default MarkdownPreview;
+export default MarkDownPreview;

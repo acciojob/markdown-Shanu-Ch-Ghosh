@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import MarkdownEditor from './MarkdownEditor';
-import MarkdownPreview from './MarkdownPreview';
+import MarkdownEditor from './MarkDownEditor';
+import MarkdownPreview from './MarkDownPreview';
 import "../styles/App.css"
 
 const App = () => {
-  const [markdown, setMarkdown] = useState("");
-  const [html, setHtml] = useState("");
+  const [markdown, setMarkdown] = useState('');
+  const [html, setHtml] = useState('');
 
   useEffect(() => {
     // Simple markdown to HTML conversion
@@ -24,7 +24,6 @@ const App = () => {
   return (
     <div className="app">
       <MarkdownEditor markdown={markdown} setMarkdown={setMarkdown} />
-
       <MarkdownPreview html={html} />
     </div>
   );
